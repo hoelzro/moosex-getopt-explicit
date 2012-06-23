@@ -39,6 +39,9 @@ __END__
 
 =head1 DESCRIPTION
 
+B<NOTE> I didn't know about L<MooseX::Getopt::Strict> when I wrote this; use
+that instead!
+
 L<MooseX::Getopt> is nice, but I don't care for how it creates a command
 line option for every attribute in my classes unless explicitly overridden.
 So this role does the opposite: it requires C<traits =E<gt> ['Getopt']> in
