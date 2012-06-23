@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.02 June 23 2012
      - Tell people to use MooseX::Getopt::Strict instead.
 
 0.01 June 22 2012
