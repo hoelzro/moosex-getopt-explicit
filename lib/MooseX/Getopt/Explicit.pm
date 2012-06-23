@@ -2,8 +2,19 @@
 package MooseX::Getopt::Explicit;
 
 ## use critic (RequireUseStrict)
-use strict;
-use warnings;
+use Moose::Role;
+
+with 'MooseX::Getopt';
+
+around _compute_getopt_attrs => sub {
+    my ( $orig, $self, @args ) = @_;
+
+    my @attrs = $self->$orig(@args);
+
+    return grep {
+        $_->does('MooseX::Getopt::Meta::Attribute::Trait')
+    } @attrs;
+};
 
 1;
 
