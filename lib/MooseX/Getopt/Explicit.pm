@@ -20,7 +20,7 @@ around _compute_getopt_attrs => sub {
 
 __END__
 
-# ABSTRACT: MooseX::Getopt, but without implicit option generation
+# ABSTRACT: MooseX::Getopt, but without implicit option generation [DEPRECATED]
 
 =head1 SYNOPSIS
 
@@ -50,5 +50,8 @@ order for a command line option to be generated.
 =head1 SEE ALSO
 
 L<MooseX::Getopt>
+
+L<MooseX::Getopt::Strict> - when using this, give attributes
+a C<Getopt> metaclass if you want it to get a command-line option.
 
 =cut
