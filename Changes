@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.03 November 02 2015
     - Mark dist as deprecated in the metadata and the abstract
 
 0.02 June 23 2012
